@@ -1,0 +1,57 @@
+.recommendation {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+.recommendation h1 {
+    color: #ff5e62;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 8px #fff7;
+}
+
+.recommendation button {
+    background: linear-gradient(90deg, #ff9966 0%, #ff5e62 100%);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(255, 94, 98, 0.15);
+    transition: background 0.3s, transform 0.2s;
+    margin-bottom: 2rem;
+}
+
+.recommendation button:hover {
+    background: linear-gradient(90deg, #ff5e62 0%, #ff9966 100%);
+    transform: translateY(-2px) scale(1.05);
+}
+
+#recommendation {
+    background: #fff;
+    color: #ff5e62;
+    padding: 1.5rem 2rem;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(252, 182, 159, 0.15);
+    font-size: 1.3rem;
+    min-width: 300px;
+    min-height: 60px;
+    text-align: center;
+    margin-top: 1rem;
+    transition: box-shadow 0.3s;
+}
+
+#recommendation:empty {
+    background: transparent;
+    box-shadow: none;
+    min-height: 0;
+    padding: 0;
+}
